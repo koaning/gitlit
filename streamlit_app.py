@@ -5,9 +5,15 @@ import streamlit as st
 
 
 st.title("Github Actions Explorer")
-st.write("This is the average number of hours that each project takes.")
 
-df = pd.read_csv("all.csv").assign(time_taken = lambda d: d['time_taken']/60/60)
+daymap = {0:'Monday', 1:'Tuesday', 2:'Wednesday', 3:'Thursday', 4:'Friday', 5:'Saturday', 6:'Sunday'}
+
+
+df = (
+    pd.read_csv("all.csv")
+      .assign(time_taken = lambda d: d['time_taken']/60/60,
+              day_of_week = lambda d: pd.to_datetime(d['date']).dt.day_of_week.map(daymap))
+)
 
 select_org = st.sidebar.multiselect(
     "Select Organisation",
@@ -26,7 +32,11 @@ select_flow = st.sidebar.multiselect(
     default=list(df.loc[lambda d: d['repo'].isin(select_repo)]['workflow'].unique()),
 )
 
+st.sidebar.markdown("**Like what you see?**")
+st.sidebar.markdown("Find us on [Github](https://github.com/koaning/gitlit)! You can let us know if there are public repos missing by submitting an issue.")
+
 if not select_org:
+    st.write("We're keeping track of a few GitHub orgs. Below you can see how they compare in terms of how long their actions ran.")
     y_col = 'org'
     source = (df
         .groupby(['org'])
@@ -41,9 +51,11 @@ if not select_org:
     )
 
     st.write(bars_repo.properties(height=600, width=600))
+    st.write("You can drill down by selecting an organisation on the sidebar.")
 
 
 if select_flow:
+    st.write("Here's a list of all the workflows that are running in the current org. Note that in the sidebar we've selected all known repositories. You can turn some off if you like.")
     source_repo = (df
             .loc[lambda d: d['org'].isin(select_org)]
             .groupby(['org', 'repo', 'workflow'])
@@ -60,10 +72,12 @@ if select_flow:
 
     st.write(bars_wkfl.properties(height=300, width=600))
 
+    st.write("If you're looking for reasons why there's so many spikes, the charts below can help you pinpoint a date. The top chart gives an overview per repo while the bottom one gives an overview per workflow.")
+
     source_wkfl = (df
             .loc[lambda d: d['org'].isin(select_org)]
             .loc[lambda d: d['repo'].isin(select_repo)]
-            .groupby(['org', 'repo', 'date'])
+            .groupby(['org', 'repo', 'date', 'day_of_week'])
             .agg({'time_taken': 'sum'})
             .reset_index()
             .assign(hrs_per_day=lambda d: d['time_taken'],
@@ -74,13 +88,14 @@ if select_flow:
         x='date:T',
         y='hrs_per_day',
         color='workflow',
+        tooltip=['date', 'day_of_week', 'hrs_per_day']
     ).properties(title="Overview of Repo")
 
     source_wkfl = (df
             .loc[lambda d: d['org'].isin(select_org)]
             .loc[lambda d: d['repo'].isin(select_repo)]
             .loc[lambda d: d['workflow'].isin(select_flow)]
-            .groupby(['org', 'repo', 'workflow', 'date'])
+            .groupby(['org', 'repo', 'workflow', 'date', 'day_of_week'])
             .agg({'time_taken': 'sum'})
             .reset_index()
             .assign(hrs_per_day=lambda d: d['time_taken'],
@@ -91,7 +106,9 @@ if select_flow:
         x='date:T',
         y='hrs_per_day',
         color='workflow',
+        tooltip=['date', 'day_of_week', 'hrs_per_day']
     ).properties(title="Overview of Workflow")
 
     chart = (total_workflow_chart & bars_wkfl)
     st.write(chart)
+
