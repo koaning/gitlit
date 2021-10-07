@@ -11,7 +11,7 @@ daymap = {0:'Monday', 1:'Tuesday', 2:'Wednesday', 3:'Thursday', 4:'Friday', 5:'S
 
 df = (
     pd.read_csv("all.csv")
-      .assign(time_taken = lambda d: d['time_taken']/60/60,
+      .assign(time_taken = lambda d: d['time_taken_total']/60/60,
               day_of_week = lambda d: pd.to_datetime(d['date']).dt.day_of_week.map(daymap))
 )
 
