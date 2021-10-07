@@ -32,6 +32,8 @@ select_flow = st.sidebar.multiselect(
     default=list(df.loc[lambda d: d['repo'].isin(select_repo)]['workflow'].unique()),
 )
 
+outlier_slider = st.sidebar.slider("Outlier Filter", min_value=95, max_value=100, value=99)
+
 st.sidebar.markdown("**Like what you see?**")
 st.sidebar.markdown("Find us on [Github](https://github.com/koaning/gitlit)! You can let us know if there are public repos missing by submitting an issue.")
 
@@ -72,7 +74,7 @@ if select_flow:
 
     st.write(bars_wkfl.properties(height=300, width=600))
 
-    st.write("If you're looking for reasons why there's so many spikes, the charts below can help you pinpoint a date. The top chart gives an overview per repo while the bottom one gives an overview per workflow.")
+    st.write("The next chart shows the total Github actions time per date.")
 
     source_wkfl = (df
             .loc[lambda d: d['org'].isin(select_org)]
@@ -87,28 +89,37 @@ if select_flow:
     total_workflow_chart = alt.Chart(source_wkfl).mark_line(interpolate='step-after').encode(
         x='date:T',
         y='hrs_per_day',
-        color='workflow',
+        color=alt.Color('workflow', legend=None),
         tooltip=['date', 'day_of_week', 'hrs_per_day']
-    ).properties(title="Overview of Repo")
+    ).properties(title="Github actions time per date.")
 
     source_wkfl = (df
             .loc[lambda d: d['org'].isin(select_org)]
             .loc[lambda d: d['repo'].isin(select_repo)]
             .loc[lambda d: d['workflow'].isin(select_flow)]
             .groupby(['org', 'repo', 'workflow', 'date', 'day_of_week'])
-            .agg({'time_taken': 'sum'})
+            .agg({'time_taken': 'sum', 
+                  'time_taken_q25': 'mean',
+                  'time_taken_q50': 'mean',
+                  'time_taken_q75': 'mean'})
             .reset_index()
             .assign(hrs_per_day=lambda d: d['time_taken'],
                     workflow=lambda d: d['repo'] + '-' + d['workflow'])
-            .sort_values("hrs_per_day"))
+            .sort_values("hrs_per_day")
+            .assign(date_str=lambda d: [str(t) for t in d['date']])
+            .loc[lambda d: d['time_taken_q50'] <= np.percentile(d['time_taken_q50'], outlier_slider)])
 
+    
     bars_wkfl = alt.Chart(source_wkfl).mark_line(interpolate='step-after').encode(
         x='date:T',
-        y='hrs_per_day',
-        color='workflow',
-        tooltip=['date', 'day_of_week', 'hrs_per_day']
-    ).properties(title="Overview of Workflow")
+        y='time_taken_q50',
+        color=alt.Color('workflow', legend=None),
+        tooltip=['date_str', 'day_of_week', 'time_taken_q25', 'time_taken_q50', 'time_taken_q75', 'org', 'repo', 'workflow']
+    ).properties(title="Average Time Taken per Day/Workflow").interactive()
 
-    chart = (total_workflow_chart & bars_wkfl)
-    st.write(chart)
+    st.altair_chart(total_workflow_chart, use_container_width=True)
+    
+    st.write("This next chart shows the median time taken per workflow run. This can be useful to pinpoint when an expensive test was added.")
+    
+    st.altair_chart(bars_wkfl, use_container_width=True)
 
