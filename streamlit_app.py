@@ -4,7 +4,7 @@ import altair as alt
 import streamlit as st
 
 
-st.title("Github Actions Explorer")
+st.title("GitHub Actions Explorer")
 
 daymap = {0:'Monday', 1:'Tuesday', 2:'Wednesday', 3:'Thursday', 4:'Friday', 5:'Saturday', 6:'Sunday'}
 
@@ -35,7 +35,7 @@ select_flow = st.sidebar.multiselect(
 outlier_slider = st.sidebar.slider("Outlier Filter", min_value=95, max_value=100, value=99)
 
 st.sidebar.markdown("**Like what you see?**")
-st.sidebar.markdown("Find us on [Github](https://github.com/koaning/gitlit)! You can let us know if there are public repos missing by submitting an issue.")
+st.sidebar.markdown("Find us on [GitHub](https://github.com/koaning/gitlit)! You can let us know if there are public repos missing by submitting an issue.")
 
 if not select_org:
     st.write("We're keeping track of a few GitHub orgs. Below you can see how they compare in terms of how long their actions ran.")
@@ -74,7 +74,7 @@ if select_flow:
 
     st.write(bars_wkfl.properties(height=300, width=600))
 
-    st.write("The next chart shows the total Github actions time per date.")
+    st.write("The next chart shows the total GitHub Actions time per date.")
 
     source_wkfl = (df
             .loc[lambda d: d['org'].isin(select_org)]
@@ -91,7 +91,7 @@ if select_flow:
         y='hrs_per_day',
         color=alt.Color('workflow', legend=None),
         tooltip=['date', 'day_of_week', 'hrs_per_day']
-    ).properties(title="Github actions time per date.")
+    ).properties(title="GitHub Actions time per date.")
 
     source_wkfl = (df
             .loc[lambda d: d['org'].isin(select_org)]
