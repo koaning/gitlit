@@ -1,6 +1,8 @@
 # gitlit
 
-This repo is the result of a scraper that scrapes the Github Actions runtimes from the Github API. The data is 
+![screenshot](gitlit.png)
+
+This repo contains the result of a scraper that scrapes the Github Actions runtimes from the Github API. The data is 
 updated daily, assuming the cronjob doesn't face any bugs. 
 
 The goal is to get a clear picture of the amount of compute is spent for CI for common open source packages. 
