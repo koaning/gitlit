@@ -530,6 +530,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-04-16,PyCQA,pycodestyle,main,650,44.25,72.5,109.5
 2022-08-02,PyCQA,pycodestyle,main,1608,175.0,402.0,629.0
 2021-11-23,PyCQA,pycodestyle,main,50442,83.0,12610.5,25138.0
+2022-10-10,PyCQA,pycodestyle,main,166,83.0,83.0,83.0
 2021-12-28,PyCQA,pycodestyle,main,816,0.0,79.0,83.0
 2021-12-22,PyCQA,pycodestyle,main,0,0.0,0.0,0.0
 2022-07-11,PyCQA,pycodestyle,main,1390,291.0,347.5,404.0
@@ -1564,6 +1565,15 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-04-15,PyCQA,pylint,CodeQL,35831,324.0,373.0,417.0
 2022-04-15,PyCQA,pylint,Primer,54627,385.0,1197.5,1482.0
 2022-04-15,PyCQA,pylint,Tests,58344,694.0,826.0,1105.75
+2022-10-10,PyCQA,pylint,Checks,115109,134.0,514.0,3141.0
+2022-10-10,PyCQA,pylint,CodeQL,94113,327.0,445.0,1001.0
+2022-10-10,PyCQA,pylint,Primer,61119,142.0,471.0,1954.0
+2022-10-10,PyCQA,pylint,Primer / Comment,17692,3.0,42.0,1149.0
+2022-10-10,PyCQA,pylint,Primer / Main,9728,24.0,72.5,2045.0
+2022-10-10,PyCQA,pylint,Primer / Run,68289,828.0,2687.0,3333.5
+2022-10-10,PyCQA,pylint,Release,1841,1841.0,1841.0,1841.0
+2022-10-10,PyCQA,pylint,Tests,139852,1097.0,1703.0,2919.0
+2022-10-10,PyCQA,pylint,changelog,92946,3.25,39.0,731.75
 2022-07-17,PyCQA,pylint,Checks,16296,276.0,337.0,496.0
 2022-07-17,PyCQA,pylint,CodeQL,13922,294.0,310.0,373.0
 2022-07-17,PyCQA,pylint,Primer,12530,391.0,476.0,658.0
@@ -2216,6 +2226,8 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-08-02,fairlearn,fairlearn,build-test,23366,1588.0,2225.0,2382.0
 2022-09-06,fairlearn,fairlearn,build-test,9802,530.25,1105.0,1800.0
 2022-06-20,fairlearn,fairlearn,build-test,15052,1656.25,2359.5,2584.75
+2022-10-10,fairlearn,fairlearn,Test with Other ML Packages,2142,1071.0,1071.0,1071.0
+2022-10-10,fairlearn,fairlearn,build-test,13358,6679.0,6679.0,6679.0
 2022-07-17,fairlearn,fairlearn,build-test,3938,1969.0,1969.0,1969.0
 2022-08-16,fairlearn,fairlearn,build-test,30640,961.5,2446.0,2949.5
 2022-08-24,fairlearn,fairlearn,build-test,8138,2.0,7.5,400.0
@@ -5552,6 +5564,17 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-09-01,pandas-dev,pandas,Python Dev,53914,2219.25,2490.0,2852.75
 2021-09-01,pandas-dev,pandas,pre-commit,13599,299.0,350.0,393.0
 2021-09-01,pandas-dev,pandas,sdist,25376,814.75,956.0,1163.75
+2022-10-10,pandas-dev,pandas,32 Bit Linux,23751,2219.25,2232.5,2268.0
+2022-10-10,pandas-dev,pandas,ASV Bot,25,2.0,2.0,6.5
+2022-10-10,pandas-dev,pandas,Assign,84,9.5,11.0,17.0
+2022-10-10,pandas-dev,pandas,Code Checks,16964,1912.0,1975.0,2242.0
+2022-10-10,pandas-dev,pandas,Doc Build and Upload,51456,5301.5,6046.0,6623.5
+2022-10-10,pandas-dev,pandas,Python Dev,39782,4149.0,4389.5,4588.5
+2022-10-10,pandas-dev,pandas,Scorecards supply-chain security,254,114.5,127.0,139.5
+2022-10-10,pandas-dev,pandas,Ubuntu,48179,5233.75,5512.0,5819.5
+2022-10-10,pandas-dev,pandas,Wheel builder,6115,6.0,7.0,8.5
+2022-10-10,pandas-dev,pandas,Windows-MacOS,53160,5406.0,6193.5,6723.0
+2022-10-10,pandas-dev,pandas,sdist,2256,2.5,3.0,328.0
 2022-07-24,pandas-dev,pandas,32 Bit Linux,34879,1812.25,1935.0,2131.75
 2022-07-24,pandas-dev,pandas,ASV Bot,45,2.0,2.0,2.0
 2022-07-24,pandas-dev,pandas,Assign,246,10.0,10.0,12.0
@@ -7091,6 +7114,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-08-08,rstudio,shiny,Package checks,3072,757.0,768.0,779.0
 2022-09-26,rstudio,shiny,Package checks,3264,683.0,816.0,949.0
 2022-06-20,rstudio,shiny,Package checks,1468,734.0,734.0,734.0
+2022-10-10,rstudio,shiny,Package checks,1860,930.0,930.0,930.0
 2022-07-17,rstudio,shiny,Package checks,0,0.0,0.0,0.0
 2022-10-04,rstudio,shiny,Package checks,1550,775.0,775.0,775.0
 2021-12-01,rstudio,shiny,Package checks,43282,21641.0,21641.0,21641.0
@@ -7776,6 +7800,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-09-01,rstudio,rmarkdown,R-CMD-check,874,437.0,437.0,437.0
 2021-09-01,rstudio,rmarkdown,R-CMD-check-daily-pandoc,860,430.0,430.0,430.0
 2021-09-01,rstudio,rmarkdown,pkgdown,416,208.0,208.0,208.0
+2022-10-10,rstudio,rmarkdown,R-CMD-check-daily-pandoc,922,461.0,461.0,461.0
 2022-07-24,rstudio,rmarkdown,R-CMD-check-daily-pandoc,640,320.0,320.0,320.0
 2021-09-21,rstudio,rmarkdown,Lock threads,30,15.0,15.0,15.0
 2021-09-21,rstudio,rmarkdown,R-CMD-check-daily-pandoc,760,380.0,380.0,380.0
@@ -8379,6 +8404,8 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-04-15,pytest-dev,pytest,test,4586,1114.0,1146.5,1179.0
 2021-10-16,pytest-dev,pytest,main,8470,1018.25,1046.0,1086.5
 2021-09-01,pytest-dev,pytest,main,1966,983.0,983.0,983.0
+2022-10-10,pytest-dev,pytest,backport,94,22.0,23.5,25.0
+2022-10-10,pytest-dev,pytest,test,28378,1082.5,1229.0,1362.25
 2022-07-24,pytest-dev,pytest,Update Plugin List,224,112.0,112.0,112.0
 2022-07-24,pytest-dev,pytest,test,2760,1380.0,1380.0,1380.0
 2021-09-21,pytest-dev,pytest,main,4200,973.0,1050.0,1127.0
@@ -10577,6 +10604,14 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-09-01,scikit-learn,scikit-learn,Pull Request Regex Title Labeler,832,26.0,32.0,39.0
 2021-09-01,scikit-learn,scikit-learn,Twitter Push Notification,60,14.75,15.0,15.25
 2021-09-01,scikit-learn,scikit-learn,Wheel builder,898,21.0,22.0,23.75
+2022-10-10,scikit-learn,scikit-learn,.github/workflows/artifact-redirector.yml,1720,12.0,13.0,15.0
+2022-10-10,scikit-learn,scikit-learn,Assign,61,2.0,3.0,3.0
+2022-10-10,scikit-learn,scikit-learn,Check Changelog,125,26.0,28.0,32.0
+2022-10-10,scikit-learn,scikit-learn,Documentation builder,4651,840.0,952.0,953.0
+2022-10-10,scikit-learn,scikit-learn,Documentation push trigger,149,15.0,17.0,21.0
+2022-10-10,scikit-learn,scikit-learn,Pull Request Labeler,17,17.0,17.0,17.0
+2022-10-10,scikit-learn,scikit-learn,Pull Request Regex Title Labeler,24,24.0,24.0,24.0
+2022-10-10,scikit-learn,scikit-learn,Wheel builder,101,19.0,20.0,21.0
 2022-07-24,scikit-learn,scikit-learn,.github/workflows/artifact-redirector.yml,822,11.0,13.0,14.0
 2022-07-24,scikit-learn,scikit-learn,Assign,18,2.0,2.0,2.0
 2022-07-24,scikit-learn,scikit-learn,Check Changelog,314,25.0,26.5,30.0
@@ -13086,6 +13121,13 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-09-01,scipy,scipy,Build Gitpod Docker image,2380,1190.0,1190.0,1190.0
 2021-09-01,scipy,scipy,Linux Tests,85016,2139.0,2183.0,2570.75
 2021-09-01,scipy,scipy,macOS tests,75928,1846.0,1939.0,2022.75
+2022-10-10,scipy,scipy,.github/workflows/circle_artifacts.yml,169,2.0,2.0,11.0
+2022-10-10,scipy,scipy,Linux Meson tests,1865,931.75,932.5,933.25
+2022-10-10,scipy,scipy,Linux Tests,3019,1493.25,1509.5,1525.75
+2022-10-10,scipy,scipy,Wheel builder,5263,1323.75,2631.5,3939.25
+2022-10-10,scipy,scipy,Windows Meson tests,4471,2133.75,2235.5,2337.25
+2022-10-10,scipy,scipy,macOS tests (meson),5724,2493.0,2862.0,3231.0
+2022-10-10,scipy,scipy,macOS tests (setup.py),7538,3691.0,3769.0,3847.0
 2022-07-24,scipy,scipy,.github/workflows/circle_artifacts.yml,1924,11.0,13.0,15.0
 2022-07-24,scipy,scipy,Build Gitpod Docker image,1364,1364.0,1364.0,1364.0
 2022-07-24,scipy,scipy,Linux Meson tests,9231,736.5,767.0,780.0
@@ -16620,6 +16662,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-09-06,tidyverse,readr,R-CMD-check-against-dev-vroom,548,274.0,274.0,274.0
 2022-09-06,tidyverse,readr,pkgdown,638,319.0,319.0,319.0
 2022-09-06,tidyverse,readr,test-coverage,632,316.0,316.0,316.0
+2022-10-10,tidyverse,readr,R-CMD-check-against-dev-vroom,570,285.0,285.0,285.0
 2021-09-21,tidyverse,readr,Commands,4,2.0,2.0,2.0
 2021-09-21,tidyverse,readr,R-CMD-check,6078,1457.0,1519.5,1582.0
 2021-09-21,tidyverse,readr,pkgdown,898,449.0,449.0,449.0
@@ -17313,6 +17356,11 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-04-15,tidyverse,dplyr,Commands,128,2.0,2.0,3.0
 2022-04-15,tidyverse,dplyr,R-CMD-check,1546,773.0,773.0,773.0
 2022-04-15,tidyverse,dplyr,test-coverage,574,287.0,287.0,287.0
+2022-10-10,tidyverse,dplyr,Commands,12,3.0,3.0,3.0
+2022-10-10,tidyverse,dplyr,R-CMD-check,4836,776.0,818.0,833.0
+2022-10-10,tidyverse,dplyr,pages build and deployment,86,43.0,43.0,43.0
+2022-10-10,tidyverse,dplyr,pkgdown,2758,353.25,405.0,579.75
+2022-10-10,tidyverse,dplyr,test-coverage,2116,258.75,300.0,459.75
 2022-07-24,tidyverse,dplyr,Commands,28,2.0,2.0,3.0
 2022-07-24,tidyverse,dplyr,R-CMD-check,3924,466.25,537.0,561.25
 2022-07-24,tidyverse,dplyr,pages build and deployment,78,39.0,39.0,39.0
@@ -18785,6 +18833,10 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-09-01,tidyverse,tibble,pkgdown,460,230.0,230.0,230.0
 2021-09-01,tidyverse,tibble,rcc,3224,1612.0,1612.0,1612.0
 2021-09-01,tidyverse,tibble,rcc dev,2514,1257.0,1257.0,1257.0
+2022-10-10,tidyverse,tibble,Commands,40,9.0,10.0,11.0
+2022-10-10,tidyverse,tibble,Lock threads,28,14.0,14.0,14.0
+2022-10-10,tidyverse,tibble,rcc,426,213.0,213.0,213.0
+2022-10-10,tidyverse,tibble,rcc dev,120,60.0,60.0,60.0
 2022-07-24,tidyverse,tibble,Lock threads,26,13.0,13.0,13.0
 2022-07-24,tidyverse,tibble,rcc,2756,1378.0,1378.0,1378.0
 2022-07-24,tidyverse,tibble,rcc dev,1434,717.0,717.0,717.0
@@ -19709,6 +19761,12 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-11-23,tidyverse,tidyr,pkgdown,2546,186.0,214.0,236.0
 2021-11-23,tidyverse,tidyr,test-coverage,4430,142.0,154.5,173.0
 2021-09-01,tidyverse,tidyr,Commands,34,3.0,3.0,4.0
+2022-10-10,tidyverse,tidyr,.github/workflows/check-devel.yaml,0,0.0,0.0,0.0
+2022-10-10,tidyverse,tidyr,Commands,18,3.0,4.5,6.0
+2022-10-10,tidyverse,tidyr,R-CMD-check,2646,603.0,661.5,720.0
+2022-10-10,tidyverse,tidyr,pages build and deployment,76,38.0,38.0,38.0
+2022-10-10,tidyverse,tidyr,pkgdown,1482,336.0,370.5,405.0
+2022-10-10,tidyverse,tidyr,test-coverage,1134,232.0,283.5,335.0
 2022-07-12,tidyverse,tidyr,Commands,12,3.0,3.0,3.0
 2022-01-11,tidyverse,tidyr,.github/workflows/check-devel.yaml,0,0.0,0.0,0.0
 2022-01-11,tidyverse,tidyr,Commands,10,2.0,2.5,3.0
@@ -21119,6 +21177,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-04-15,tidyverse,ggplot2,Commands,6,3.0,3.0,3.0
 2021-10-16,tidyverse,ggplot2,Commands,12,2.0,2.0,2.0
 2021-09-01,tidyverse,ggplot2,Commands,20,3.0,3.0,3.75
+2022-10-10,tidyverse,ggplot2,Commands,16,4.0,4.0,4.0
 2022-07-24,tidyverse,ggplot2,Commands,6,3.0,3.0,3.0
 2022-07-24,tidyverse,ggplot2,R-CMD-check,6512,1149.0,1628.0,2107.0
 2022-07-24,tidyverse,ggplot2,pkgdown,4952,1071.0,1238.0,1405.0
@@ -21478,6 +21537,11 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-09-06,tidyverse,purrr,pages build and deployment,82,41.0,41.0,41.0
 2022-09-06,tidyverse,purrr,pkgdown,2794,160.75,181.5,192.75
 2022-09-06,tidyverse,purrr,test-coverage,2316,122.75,137.5,153.25
+2022-10-10,tidyverse,purrr,Commands,6,3.0,3.0,3.0
+2022-10-10,tidyverse,purrr,R-CMD-check,5146,398.0,437.0,461.0
+2022-10-10,tidyverse,purrr,pages build and deployment,304,33.75,39.0,43.25
+2022-10-10,tidyverse,purrr,pkgdown,3242,218.0,262.5,340.0
+2022-10-10,tidyverse,purrr,test-coverage,2118,165.0,171.0,201.0
 2022-08-16,tidyverse,purrr,Commands,8,4.0,4.0,4.0
 2022-09-18,tidyverse,purrr,R-CMD-check,754,377.0,377.0,377.0
 2022-09-18,tidyverse,purrr,pages build and deployment,68,34.0,34.0,34.0
@@ -22633,6 +22697,8 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-09-01,sveltejs,kit,CI,11826,190.0,235.0,292.0
 2021-09-01,sveltejs,kit,Docs,84,20.0,21.0,22.0
 2021-09-01,sveltejs,kit,Release,872,47.0,55.5,58.5
+2022-10-10,sveltejs,kit,CI,148062,1353.5,1525.0,1770.0
+2022-10-10,sveltejs,kit,Release,2154,34.0,42.0,62.25
 2022-07-24,sveltejs,kit,CI,14226,577.0,915.0,1026.0
 2021-09-21,sveltejs,kit,CI,2970,207.75,224.0,387.5
 2021-09-21,sveltejs,kit,Release,98,49.0,49.0,49.0
@@ -28417,6 +28483,16 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-09-01,rasahq,rasa,Docs Tests,539,22.0,32.0,55.0
 2021-09-01,rasahq,rasa,Security Scans,2289,218.0,236.0,283.0
 2021-09-01,rasahq,rasa,Typo CI,263,33.0,39.0,41.5
+2022-10-10,rasahq,rasa,Automatic PR Merger,1063,16.0,20.0,51.0
+2022-10-10,rasahq,rasa,Automatic main branch merger,508,254.0,254.0,254.0
+2022-10-10,rasahq,rasa,CI - Model Regression,1666,11.0,13.0,36.0
+2022-10-10,rasahq,rasa,CI Github Actions,7942,99.0,178.0,350.0
+2022-10-10,rasahq,rasa,Continuous Integration,159337,378.0,644.0,3672.0
+2022-10-10,rasahq,rasa,Docs Tests,12187,14.0,319.0,423.0
+2022-10-10,rasahq,rasa,Nightly Builds,210,105.0,105.0,105.0
+2022-10-10,rasahq,rasa,Publish Documentation,11640,267.0,346.0,508.25
+2022-10-10,rasahq,rasa,Security Scans,7904,12.0,231.0,280.0
+2022-10-10,rasahq,rasa,Typo CI,1235,27.0,51.0,61.0
 2021-09-21,rasahq,rasa,Assign default project to issues,214,17.0,17.0,19.0
 2021-09-21,rasahq,rasa,Automatic PR Merger,3903,19.0,20.0,21.0
 2021-09-21,rasahq,rasa,CI - Model Regression,73999,9.0,13.0,275.0
@@ -29846,6 +29922,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-10-16,dask,dask-ml,Linting,836,27.0,33.0,43.75
 2021-10-16,dask,dask-ml,Release,106,25.0,26.5,28.0
 2021-10-16,dask,dask-ml,Tests,7334,307.0,366.0,379.25
+2022-10-10,dask,dask-ml,Upstream,896,448.0,448.0,448.0
 2022-07-24,dask,dask-ml,Upstream,1002,501.0,501.0,501.0
 2022-07-17,dask,dask-ml,Upstream,880,440.0,440.0,440.0
 2022-08-16,dask,dask-ml,Upstream,902,451.0,451.0,451.0
@@ -31939,6 +32016,14 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-09-01,dask,dask,PR Labeler,349,19.0,19.0,20.75
 2021-09-01,dask,dask,Tests,70997,2046.75,2877.5,3518.5
 2021-09-01,dask,dask,Upstream,14434,22.0,24.0,1228.5
+2022-10-10,dask,dask,Additional,18904,1293.75,1436.0,1637.0
+2022-10-10,dask,dask,Check for gpuCI updates,100,50.0,50.0,50.0
+2022-10-10,dask,dask,Issue and PR Labeler,330,18.0,20.0,34.0
+2022-10-10,dask,dask,Label stale issues and PRs,36,18.0,18.0,18.0
+2022-10-10,dask,dask,Linting,1724,135.0,136.5,160.0
+2022-10-10,dask,dask,PR Labeler,324,17.0,19.0,30.0
+2022-10-10,dask,dask,Tests,30352,1799.5,2392.0,2785.25
+2022-10-10,dask,dask,Upstream,14492,19.0,20.0,2001.0
 2022-07-24,dask,dask,Check for gpuCI updates,116,58.0,58.0,58.0
 2022-07-24,dask,dask,Upstream,4402,2201.0,2201.0,2201.0
 2021-09-21,dask,dask,Additional,25344,1427.0,1643.0,1674.0
@@ -34746,6 +34831,17 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-04-15,python-pillow,Pillow,Test MinGW,238266,853.0,1174.0,33148.0
 2022-04-15,python-pillow,Pillow,Test Windows,106776,949.0,1547.0,2975.0
 2022-04-15,python-pillow,Pillow,Tidelift Align,102,51.0,51.0,51.0
+2022-10-10,python-pillow,Pillow,CIFuzz,57740,5951.0,7660.0,8019.25
+2022-10-10,python-pillow,Pillow,Close stale issues,12,12.0,12.0,12.0
+2022-10-10,python-pillow,Pillow,Lint,17317,118.0,640.0,1283.0
+2022-10-10,python-pillow,Pillow,Release drafter,2532,178.0,449.0,535.5
+2022-10-10,python-pillow,Pillow,Test,65768,1749.0,2618.5,3252.5
+2022-10-10,python-pillow,Pillow,Test Cygwin,75319,2563.0,3080.5,4307.0
+2022-10-10,python-pillow,Pillow,Test Docker,70748,2481.5,2805.0,4086.0
+2022-10-10,python-pillow,Pillow,Test MinGW,133951,1436.0,2727.0,4084.0
+2022-10-10,python-pillow,Pillow,Test Valgrind,368834,21512.0,48146.0,74506.0
+2022-10-10,python-pillow,Pillow,Test Windows,80182,1275.75,3264.5,4302.0
+2022-10-10,python-pillow,Pillow,Tidelift Align,5845,1243.5,1643.0,1860.75
 2022-07-24,python-pillow,Pillow,Close stale issues,26,13.0,13.0,13.0
 2022-07-24,python-pillow,Pillow,Lint,420,101.0,105.0,109.0
 2022-07-24,python-pillow,Pillow,Release drafter,84,19.0,21.0,23.0
@@ -37988,6 +38084,18 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-10-16,jina-ai,jina,Manual Docker Build,9426,1494.25,1612.0,1637.5
 2021-10-16,jina-ai,jina,Manual Docs Build,2382,371.25,375.0,428.25
 2021-10-16,jina-ai,jina,PR,716,22.0,25.5,27.0
+2022-10-10,jina-ai,jina,Autocommit,74,37.0,37.0,37.0
+2022-10-10,jina-ai,jina,CD,19776,11.0,4944.0,9877.0
+2022-10-10,jina-ai,jina,CI,206240,1504.0,2040.0,2158.0
+2022-10-10,jina-ai,jina,CI for Code Un-related Changes,1938,102.0,120.0,130.25
+2022-10-10,jina-ai,jina,Close stale issues,28,14.0,14.0,14.0
+2022-10-10,jina-ai,jina,CodeQL,22780,536.0,584.0,660.0
+2022-10-10,jina-ai,jina,Manual Docker Build,2432,1216.0,1216.0,1216.0
+2022-10-10,jina-ai,jina,Manual Docs Build,384,192.0,192.0,192.0
+2022-10-10,jina-ai,jina,Nightly Tests,3118,1559.0,1559.0,1559.0
+2022-10-10,jina-ai,jina,PR,4390,24.0,34.5,248.0
+2022-10-10,jina-ai,jina,Update Announcement,200,100.0,100.0,100.0
+2022-10-10,jina-ai,jina,pages build and deployment,108,54.0,54.0,54.0
 2021-09-21,jina-ai,jina,.github/workflows/nightly-tests.yml,0,0.0,0.0,0.0
 2021-09-21,jina-ai,jina,Autocommit,376,188.0,188.0,188.0
 2021-09-21,jina-ai,jina,CD,5299,7.0,8.0,1167.0
@@ -40174,6 +40282,8 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-01-08,willmcgugan,textual,issues,32,16.0,16.0,16.0
 2022-09-06,willmcgugan,textual,Test Textual module,7218,207.0,261.0,309.0
 2022-09-06,willmcgugan,textual,pages build and deployment,304,44.0,53.0,56.75
+2022-10-10,willmcgugan,textual,Test Textual module,1874,0.0,283.0,325.0
+2022-10-10,willmcgugan,textual,issues,30,15.0,15.0,15.0
 2022-08-16,willmcgugan,textual,Test Textual module,6734,99.5,208.0,313.5
 2022-08-16,willmcgugan,textual,issues,94,15.0,15.0,16.5
 2021-08-17,willmcgugan,textual,Test Textual module,1200,282.0,300.0,318.0
@@ -40780,6 +40890,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-09-06,pypa,twine,Main,782,391.0,391.0,391.0
 2022-06-20,pypa,twine,Main,510,255.0,255.0,255.0
 2022-04-15,pypa,twine,Main,672,336.0,336.0,336.0
+2022-10-10,pypa,twine,Main,670,335.0,335.0,335.0
 2022-07-24,pypa,twine,Main,770,385.0,385.0,385.0
 2022-07-17,pypa,twine,Main,842,421.0,421.0,421.0
 2022-08-16,pypa,twine,CodeQL,0,0.0,0.0,0.0
@@ -41126,6 +41237,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-08-02,pypa,setuptools,tests,25210,1151.75,1501.0,2013.0
 2022-09-06,pypa,setuptools,tests,11744,2931.0,2936.0,2941.0
 2022-06-20,pypa,setuptools,tests,43044,1188.5,1873.0,2413.25
+2022-10-10,pypa,setuptools,tests,3762,0.0,940.5,1881.0
 2022-07-24,pypa,setuptools,tests,9292,1150.0,1179.0,1190.5
 2022-08-16,pypa,setuptools,tests,34600,508.0,1401.0,1587.0
 2021-12-24,pypa,setuptools,tests,138964,3016.0,4784.5,7329.0
@@ -41648,6 +41760,8 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-06-20,pypa,build,test,12358,2682.0,3089.5,3497.0
 2022-04-15,pypa,build,check,476,49.75,55.0,115.0
 2022-04-15,pypa,build,test,24692,3609.75,3702.0,4724.25
+2022-10-10,pypa,build,check,230,41.0,57.5,74.0
+2022-10-10,pypa,build,test,15324,2301.0,3831.0,5361.0
 2022-07-24,pypa,build,check,214,107.0,107.0,107.0
 2022-07-24,pypa,build,test,5878,2939.0,2939.0,2939.0
 2022-07-17,pypa,build,check,94,47.0,47.0,47.0
@@ -43079,6 +43193,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-09-06,pypa,virtualenv,check,20244,2841.0,3498.0,3876.0
 2022-06-20,pypa,virtualenv,check,4852,2426.0,2426.0,2426.0
 2022-04-15,pypa,virtualenv,check,5288,2644.0,2644.0,2644.0
+2022-10-10,pypa,virtualenv,check,28370,200.0,2279.0,4228.0
 2022-07-24,pypa,virtualenv,check,36916,100.75,134.0,1025.0
 2022-07-17,pypa,virtualenv,check,620,310.0,310.0,310.0
 2022-08-16,pypa,virtualenv,check,5508,2754.0,2754.0,2754.0
@@ -43879,6 +43994,8 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-04-15,denoland,deno_std,ci,17996,0.0,0.0,0.0
 2021-10-16,denoland,deno_std,ci,40312,812.0,1014.0,1057.25
 2021-09-01,denoland,deno_std,ci,71532,695.0,717.0,873.0
+2022-10-10,denoland,deno_std,ci,150526,676.5,723.0,750.5
+2022-10-10,denoland,deno_std,deploy-compat,478,46.0,46.0,46.0
 2022-07-24,denoland,deno_std,ci,4238,562.25,806.0,825.5
 2021-09-21,denoland,deno_std,ci,42460,698.5,797.0,824.75
 2021-09-25,denoland,deno_std,ci,8264,744.0,746.5,917.0
@@ -44834,6 +44951,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-03-10,jazzband,django-payments,Test,644,322.0,322.0,322.0
 2022-08-08,jazzband,django-payments,Test,5554,2777.0,2777.0,2777.0
 2022-09-06,jazzband,django-payments,Test,518,259.0,259.0,259.0
+2022-10-10,jazzband,django-payments,Test,6962,3481.0,3481.0,3481.0
 2022-05-21,jazzband,django-payments,Test,1688,277.75,280.0,285.25
 2022-03-11,jazzband,django-payments,Test,2036,244.25,249.5,259.75
 2022-04-14,jazzband,django-payments,Test,674,337.0,337.0,337.0
@@ -45109,6 +45227,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-11-23,jazzband,django-oauth-toolkit,Test,1012,506.0,506.0,506.0
 2022-09-06,jazzband,django-oauth-toolkit,Test,6408,993.25,1081.0,1139.5
 2022-06-20,jazzband,django-oauth-toolkit,Test,5028,1135.0,1257.0,1379.0
+2022-10-10,jazzband,django-oauth-toolkit,Test,61384,1301.75,1704.5,2476.25
 2021-12-24,jazzband,django-oauth-toolkit,Test,1146,573.0,573.0,573.0
 2022-09-18,jazzband,django-oauth-toolkit,Test,61414,1146.0,15353.5,29561.0
 2022-10-04,jazzband,django-oauth-toolkit,Test,12426,1141.5,1525.0,1936.75
@@ -45184,6 +45303,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-09-06,jazzband,django-silk,Test,906,0.0,226.5,453.0
 2022-06-20,jazzband,django-silk,Release,1628,130.0,407.0,684.0
 2022-06-20,jazzband,django-silk,Test,18010,429.0,597.0,977.0
+2022-10-10,jazzband,django-silk,Test,15012,2789.0,3753.0,4717.0
 2022-09-04,jazzband,django-silk,Test,816,408.0,408.0,408.0
 2022-02-20,jazzband,django-silk,Test,0,0.0,0.0,0.0
 2022-01-11,jazzband,django-silk,Test,646,323.0,323.0,323.0
@@ -45303,6 +45423,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-08-02,jazzband,django-debug-toolbar,Test,2304,361.5,387.0,405.75
 2021-11-23,jazzband,django-debug-toolbar,Test,800,192.0,200.0,208.0
 2022-06-20,jazzband,django-debug-toolbar,Test,2492,611.0,623.0,635.0
+2022-10-10,jazzband,django-debug-toolbar,Test,19094,4628.0,4773.5,4919.0
 2022-08-16,jazzband,django-debug-toolbar,Test,832,416.0,416.0,416.0
 2022-09-18,jazzband,django-debug-toolbar,Test,698,0.0,174.5,349.0
 2022-02-20,jazzband,django-debug-toolbar,Test,14694,308.25,329.0,345.5
@@ -45393,6 +45514,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-02-23,jazzband,django-taggit,Test,542,131.0,135.5,140.0
 2022-08-08,jazzband,django-taggit,Test,132642,842.0,1457.0,48534.5
 2021-11-23,jazzband,django-taggit,Test,558,279.0,279.0,279.0
+2022-10-10,jazzband,django-taggit,Test,4346,623.0,1086.5,1550.0
 2022-04-28,jazzband,django-taggit,Test,254,127.0,127.0,127.0
 2022-09-16,jazzband,django-taggit,Test,0,0.0,0.0,0.0
 2021-12-28,jazzband,django-taggit,Test,238,119.0,119.0,119.0
@@ -46996,6 +47118,12 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-09-01,numpy,numpy,Build_Test,37839,1423.0,1460.0,1548.0
 2021-09-01,numpy,numpy,Pull Request Labeler,427,16.0,16.0,17.0
 2021-09-01,numpy,numpy,Test on Cygwin,40337,1402.5,1514.0,1755.5
+2022-10-10,numpy,numpy,.github/workflows/circleci.yml,2191,12.0,14.0,15.0
+2022-10-10,numpy,numpy,Build Gitpod Docker image,551,551.0,551.0,551.0
+2022-10-10,numpy,numpy,Build_Test,59039,1937.5,3135.0,3254.0
+2022-10-10,numpy,numpy,Pull Request Labeler,382,14.0,15.0,17.0
+2022-10-10,numpy,numpy,Test on Cygwin,40448,1752.0,1901.0,2234.0
+2022-10-10,numpy,numpy,Wheel builder,37372,18.0,24.0,3642.0
 2022-07-24,numpy,numpy,.github/workflows/circleci.yml,2470,13.0,14.0,16.0
 2022-07-24,numpy,numpy,Build_Test,71693,301.0,2906.0,3010.0
 2022-07-24,numpy,numpy,Pull Request Labeler,354,14.0,15.0,15.25
@@ -49371,6 +49499,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-04-15,tiangolo,sqlmodel,Issue Manager,198,29.0,35.0,36.5
 2022-04-15,tiangolo,sqlmodel,Test,0,0.0,0.0,0.0
 2021-10-16,tiangolo,sqlmodel,Issue Manager,276,43.75,46.0,48.25
+2022-10-10,tiangolo,sqlmodel,Issue Manager,458,43.0,47.0,49.0
 2022-07-24,tiangolo,sqlmodel,Issue Manager,324,28.0,29.0,37.0
 2021-09-21,tiangolo,sqlmodel,Issue Manager,292,32.0,35.0,39.5
 2021-09-21,tiangolo,sqlmodel,Latest Changes,76,38.0,38.0,38.0
@@ -50076,6 +50205,10 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-04-15,tiangolo,typer,Issue Manager,208,104.0,104.0,104.0
 2021-10-16,tiangolo,typer,Issue Manager,206,103.0,103.0,103.0
 2021-09-01,tiangolo,typer,Issue Manager,782,45.0,49.0,53.25
+2022-10-10,tiangolo,typer,Build Docs,128,64.0,64.0,64.0
+2022-10-10,tiangolo,typer,Issue Manager,968,41.0,50.5,79.0
+2022-10-10,tiangolo,typer,Preview Docs,64,32.0,32.0,32.0
+2022-10-10,tiangolo,typer,Test,348,174.0,174.0,174.0
 2022-07-24,tiangolo,typer,Build Docs,0,0.0,0.0,0.0
 2022-07-24,tiangolo,typer,Issue Manager,372,186.0,186.0,186.0
 2022-07-24,tiangolo,typer,Test,0,0.0,0.0,0.0
@@ -53148,6 +53281,15 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-09-01,psf,black,Test,744,372.0,372.0,372.0
 2021-09-01,psf,black,docker,422,211.0,211.0,211.0
 2021-09-01,psf,black,test uvloop,1838,919.0,919.0,919.0
+2022-10-10,psf,black,Documentation,23980,131.0,206.0,868.0
+2022-10-10,psf,black,Fuzz,23496,106.0,115.0,845.0
+2022-10-10,psf,black,Lint,23022,78.0,93.0,825.0
+2022-10-10,psf,black,Test,18280,957.5,1060.5,1345.0
+2022-10-10,psf,black,Test 3.11 without aiohttp extensions,9244,304.75,331.0,766.0
+2022-10-10,psf,black,changelog,21930,12.0,24.0,754.0
+2022-10-10,psf,black,diff-shades,18252,736.75,1100.0,1497.0
+2022-10-10,psf,black,diff-shades-comment,276,20.0,22.5,26.0
+2022-10-10,psf,black,docker,1092,238.0,273.0,308.0
 2021-09-21,psf,black,Documentation Build,58140,208.75,835.0,21385.0
 2021-09-21,psf,black,Fuzz,58574,226.25,905.0,21512.75
 2021-09-21,psf,black,Lint,58008,198.25,793.0,21356.5
@@ -54126,6 +54268,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-09-26,aws,chalice,Close stale issues,1958,38.25,40.0,44.75
 2021-09-09,aws,chalice,Run PR Checks,0,0.0,0.0,0.0
 2022-04-15,aws,chalice,Run PR Checks,1836,450.0,459.0,468.0
+2022-10-10,aws,chalice,Close stale issues,2096,39.0,44.0,47.25
 2022-07-17,aws,chalice,Run PR Checks,9644,141.25,394.5,678.5
 2022-09-18,aws,chalice,Close stale issues,1804,36.0,38.0,42.75
 2022-09-04,aws,chalice,Close stale issues,1932,37.0,39.5,42.25
@@ -54861,6 +55004,7 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2022-06-20,simonw,datasette,"Mirror ""master"" and ""main"" branches",64,16.0,16.0,16.0
 2022-06-20,simonw,datasette,Test,1378,328.0,344.5,361.0
 2022-06-20,simonw,datasette,Test in Pyodide with shot-scraper,272,55.0,68.0,81.0
+2022-10-10,simonw,datasette,Read the Docs Pull Request Preview,40,20.0,20.0,20.0
 2021-09-21,simonw,datasette,Calculate test coverage,626,313.0,313.0,313.0
 2021-09-21,simonw,datasette,Check JavaScript for conformance with Prettier,46,23.0,23.0,23.0
 2021-09-21,simonw,datasette,Check spelling in documentation,170,42.0,42.5,43.0
@@ -56466,6 +56610,12 @@ date,org,repo,workflow,time_taken_total,time_taken_q25,time_taken_q50,time_taken
 2021-09-01,pymc-devs,pymc3,jax-sampling,3434,262.0,276.5,283.0
 2021-09-01,pymc-devs,pymc3,pre-commit,868,68.0,75.0,77.0
 2021-09-01,pymc-devs,pymc3,pytest,18264,859.0,1505.0,2275.0
+2022-10-10,pymc-devs,pymc3,Slash Command Dispatch,376,11.0,12.0,14.0
+2022-10-10,pymc-devs,pymc3,Update pre-commit config,370,185.0,185.0,185.0
+2022-10-10,pymc-devs,pymc3,docker-image,812,406.0,406.0,406.0
+2022-10-10,pymc-devs,pymc3,pre-commit,4288,251.75,256.5,274.0
+2022-10-10,pymc-devs,pymc3,release-pipeline,568,284.0,284.0,284.0
+2022-10-10,pymc-devs,pymc3,tests,29430,2407.0,2583.0,2653.0
 2022-07-24,pymc-devs,pymc3,Slash Command Dispatch,288,12.0,14.0,14.0
 2022-07-24,pymc-devs,pymc3,pre-commit,2822,107.0,116.0,209.0
 2022-07-24,pymc-devs,pymc3,tests,26244,1736.25,1823.0,2035.5
